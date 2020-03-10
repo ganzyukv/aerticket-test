@@ -1,0 +1,20 @@
+security:
+  # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+  providers:
+    in_memory:
+      memory:
+        users:
+          test: { password: qwerty }
+  encoders:
+    Symfony\Component\Security\Core\User\User: plaintext
+  firewalls:
+    dev:
+      pattern: ^/(_(profiler|wdt)|css|images|js)/
+      security: false
+    main:
+      http_basic:
+        provider: in_memory
+#      form_login: ~
+
+
+
