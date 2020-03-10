@@ -36,7 +36,10 @@ final class FlightSearchController extends AbstractFOSRestController
             throw new EntityNotFoundException('Flight by search query does not found!');
         }
 
-        return $this->view($result);
+        return $this->view([
+            "searchQuery" => $searchQuery,
+            "searchResult" => $result,
+        ]);
 
     }
 
