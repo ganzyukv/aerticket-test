@@ -41,7 +41,7 @@
 
 Предусмотреть **Basic авторизацию**.
 
-###Пример запроса search к API в формате JSON:
+### Пример запроса search к API в формате JSON:
 ```json
   {
     "searchQuery": {
@@ -52,7 +52,7 @@
   }
 ```
 
-###Пример ответа на запрос search к API в формате JSON:
+### Пример ответа на запрос search к API в формате JSON:
 ```json
   {
     "searchQuery": {
@@ -104,7 +104,7 @@
 ##  Для запуска необходимо:
 ### 1. Склонировать проект 
 ```shell script
-  git clone git@github.com: aerticket-test
+  git clone git@github.com:ganzyukv/aerticket-test.git
   cd aerticket-test
 ```
 ### 2. Инициализация Docker окружения
